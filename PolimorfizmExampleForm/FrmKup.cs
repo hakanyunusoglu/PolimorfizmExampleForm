@@ -10,65 +10,67 @@ using System.Windows.Forms;
 
 namespace PolimorfizmExampleForm
 {
-    public partial class FrmDortgen : Form
+    public partial class FrmKup : Form
     {
-        public FrmDortgen()
+        public FrmKup()
         {
             InitializeComponent();
         }
-        List<ProfilDikdortgen> pdList = new List<ProfilDikdortgen>();
+        List<ProfilKup> pkList = new List<ProfilKup>();
         private void btnekle_Click(object sender, EventArgs e)
         {
-            ProfilDikdortgen pd = new ProfilDikdortgen();
-           pd.ID = Convert.ToInt32(tbid.Text);
-            pd.UrunAdi = tbad.Text;
-            pd.Yukseklik = Convert.ToDecimal(tbyukseklik.Text);
-            pd.KisaKenar = Convert.ToDecimal(tbkisakenar.Text);
-            pd.UzunKenar = Convert.ToDecimal(tbuzunkenar.Text);
+            ProfilKup pk = new ProfilKup();
+            pk.ID = Convert.ToInt32(tbid.Text);
+            pk.UrunAdi = tbad.Text;
+            pk.Yukseklik = Convert.ToDecimal(tbyukseklik.Text);
+            pk.KenarUzunluk = Convert.ToDecimal(tbkenar.Text);
 
-            pdList.Add(pd);
+            pkList.Add(pk);
 
             Temizle();
 
             Listele();
-            tbhacim.Text = pd.GetHacim().ToString("#.000");
-            tbfire.Text = pd.Fire().ToString("#.000");
+            tbhacim.Text = pk.GetHacim().ToString("#.000");
+            tbfire.Text = pk.Fire().ToString("#.000");
+            tbalan.Text =pk.GetTabanAlani().ToString("#.000");
 
         }
-        ProfilDikdortgen selected;
+        ProfilKup selected;
         private void btnguncelle_Click(object sender, EventArgs e)
         {
             selected.ID = Convert.ToInt32(tbid.Text);
             selected.UrunAdi = tbad.Text;
             selected.Yukseklik = Convert.ToDecimal(tbyukseklik.Text);
-            selected.KisaKenar = Convert.ToDecimal(tbkisakenar.Text);
-            selected.UzunKenar = Convert.ToDecimal(tbuzunkenar.Text);
-            tbhacim.Text = selected.GetHacim().ToString();
-            tbfire.Text = selected.Fire().ToString();
+            selected.KenarUzunluk = Convert.ToDecimal(tbkenar.Text);
+            tbhacim.Text = selected.GetHacim().ToString("#.000");
+            tbfire.Text = selected.Fire().ToString("#.000");
+            tbalan.Text = selected.GetTabanAlani().ToString("#.000");
             Listele();
             Temizle();
         }
 
         private void lburun_SelectedIndexChanged(object sender, EventArgs e)
         {
-            selected = (ProfilDikdortgen)lburun.SelectedItem;
+            selected = (ProfilKup)lburun.SelectedItem;
 
             tbid.Text = selected.ID.ToString();
             tbad.Text = selected.UrunAdi;
             tbyukseklik.Text = selected.Yukseklik.ToString();
-            tbkisakenar.Text = selected.KisaKenar.ToString();
-            tbuzunkenar.Text = selected.UzunKenar.ToString();
+            tbkenar.Text = selected.KenarUzunluk.ToString();
+            tbalan.Text = selected.GetTabanAlani().ToString();
+            tbhacim.Text = selected.GetHacim().ToString();
+            tbfire.Text = selected.Fire().ToString();
         }
 
         private void Listele()
         {
             lburun.Items.Clear();
-            foreach (var item in pdList)
+            foreach (var item in pkList)
             {
                 lburun.Items.Add(item);
             }
             dgvurun.DataSource = null;
-            dgvurun.DataSource = pdList;
+            dgvurun.DataSource = pkList;
         }
 
         private void Temizle()
@@ -76,8 +78,7 @@ namespace PolimorfizmExampleForm
             tbid.Clear();
             tbad.Clear();
             tbyukseklik.Clear();
-            tbkisakenar.Clear();
-            tbuzunkenar.Clear();
+            tbkenar.Clear();
         }
 
         private void btnlistele_Click(object sender, EventArgs e)
@@ -87,9 +88,10 @@ namespace PolimorfizmExampleForm
 
         private void btnsil_Click(object sender, EventArgs e)
         {
-            pdList.Remove(selected);
+            pkList.Remove(selected);
             tbhacim.Clear();
             tbfire.Clear();
+            tbalan.Clear();
             Listele();
             Temizle();
         }

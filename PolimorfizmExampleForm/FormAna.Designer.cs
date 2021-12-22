@@ -68,6 +68,7 @@
             this.küpProfilToolStripMenuItem.Name = "küpProfilToolStripMenuItem";
             this.küpProfilToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.küpProfilToolStripMenuItem.Text = "Küp Profil";
+            this.küpProfilToolStripMenuItem.Click += new System.EventHandler(this.küpProfilToolStripMenuItem_Click);
             // 
             // dikdörtgenProfilToolStripMenuItem
             // 

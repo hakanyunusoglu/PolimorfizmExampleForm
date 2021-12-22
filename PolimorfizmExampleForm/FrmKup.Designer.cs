@@ -1,6 +1,6 @@
 ﻿namespace PolimorfizmExampleForm
 {
-    partial class FrmDortgen
+    partial class FrmKup
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             this.tbfire = new System.Windows.Forms.TextBox();
             this.tbhacim = new System.Windows.Forms.TextBox();
-            this.tbkisakenar = new System.Windows.Forms.TextBox();
+            this.tbkenar = new System.Windows.Forms.TextBox();
             this.tbyukseklik = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -47,7 +47,7 @@
             this.dgvurun = new System.Windows.Forms.DataGridView();
             this.lburun = new System.Windows.Forms.ListBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.tbuzunkenar = new System.Windows.Forms.TextBox();
+            this.tbalan = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvurun)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,7 +57,7 @@
             this.tbfire.Location = new System.Drawing.Point(781, 235);
             this.tbfire.Name = "tbfire";
             this.tbfire.Size = new System.Drawing.Size(100, 23);
-            this.tbfire.TabIndex = 22;
+            this.tbfire.TabIndex = 42;
             // 
             // tbhacim
             // 
@@ -65,21 +65,21 @@
             this.tbhacim.Location = new System.Drawing.Point(781, 206);
             this.tbhacim.Name = "tbhacim";
             this.tbhacim.Size = new System.Drawing.Size(100, 23);
-            this.tbhacim.TabIndex = 20;
+            this.tbhacim.TabIndex = 40;
             // 
-            // tbkisakenar
+            // tbkenar
             // 
-            this.tbkisakenar.Location = new System.Drawing.Point(781, 99);
-            this.tbkisakenar.Name = "tbkisakenar";
-            this.tbkisakenar.Size = new System.Drawing.Size(100, 23);
-            this.tbkisakenar.TabIndex = 19;
+            this.tbkenar.Location = new System.Drawing.Point(781, 99);
+            this.tbkenar.Name = "tbkenar";
+            this.tbkenar.Size = new System.Drawing.Size(100, 23);
+            this.tbkenar.TabIndex = 38;
             // 
             // tbyukseklik
             // 
             this.tbyukseklik.Location = new System.Drawing.Point(781, 70);
             this.tbyukseklik.Name = "tbyukseklik";
             this.tbyukseklik.Size = new System.Drawing.Size(100, 23);
-            this.tbyukseklik.TabIndex = 18;
+            this.tbyukseklik.TabIndex = 37;
             // 
             // label6
             // 
@@ -89,7 +89,7 @@
             this.label6.Location = new System.Drawing.Point(743, 240);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(32, 15);
-            this.label6.TabIndex = 11;
+            this.label6.TabIndex = 29;
             this.label6.Text = "Fire :";
             // 
             // label5
@@ -100,17 +100,17 @@
             this.label5.Location = new System.Drawing.Point(727, 211);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 15);
-            this.label5.TabIndex = 12;
+            this.label5.TabIndex = 30;
             this.label5.Text = "Hacim :";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(708, 102);
+            this.label4.Location = new System.Drawing.Point(732, 102);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 15);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Kısa Kenar :";
+            this.label4.Size = new System.Drawing.Size(43, 15);
+            this.label4.TabIndex = 32;
+            this.label4.Text = "Kenar :";
             // 
             // label3
             // 
@@ -118,7 +118,7 @@
             this.label3.Location = new System.Drawing.Point(713, 73);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 15);
-            this.label3.TabIndex = 14;
+            this.label3.TabIndex = 33;
             this.label3.Text = "Yükseklik :";
             // 
             // tbad
@@ -126,7 +126,7 @@
             this.tbad.Location = new System.Drawing.Point(781, 41);
             this.tbad.Name = "tbad";
             this.tbad.Size = new System.Drawing.Size(100, 23);
-            this.tbad.TabIndex = 17;
+            this.tbad.TabIndex = 36;
             // 
             // label2
             // 
@@ -134,7 +134,7 @@
             this.label2.Location = new System.Drawing.Point(746, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 15);
-            this.label2.TabIndex = 15;
+            this.label2.TabIndex = 34;
             this.label2.Text = "AD :";
             // 
             // tbid
@@ -142,7 +142,7 @@
             this.tbid.Location = new System.Drawing.Point(781, 12);
             this.tbid.Name = "tbid";
             this.tbid.Size = new System.Drawing.Size(100, 23);
-            this.tbid.TabIndex = 21;
+            this.tbid.TabIndex = 41;
             // 
             // label1
             // 
@@ -150,7 +150,7 @@
             this.label1.Location = new System.Drawing.Point(751, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(24, 15);
-            this.label1.TabIndex = 16;
+            this.label1.TabIndex = 35;
             this.label1.Text = "ID :";
             // 
             // btnguncelle
@@ -158,7 +158,7 @@
             this.btnguncelle.Location = new System.Drawing.Point(12, 231);
             this.btnguncelle.Name = "btnguncelle";
             this.btnguncelle.Size = new System.Drawing.Size(75, 23);
-            this.btnguncelle.TabIndex = 10;
+            this.btnguncelle.TabIndex = 28;
             this.btnguncelle.Text = "Güncelle";
             this.btnguncelle.UseVisualStyleBackColor = true;
             this.btnguncelle.Click += new System.EventHandler(this.btnguncelle_Click);
@@ -168,7 +168,7 @@
             this.btnlistele.Location = new System.Drawing.Point(102, 231);
             this.btnlistele.Name = "btnlistele";
             this.btnlistele.Size = new System.Drawing.Size(75, 23);
-            this.btnlistele.TabIndex = 9;
+            this.btnlistele.TabIndex = 27;
             this.btnlistele.Text = "Listele";
             this.btnlistele.UseVisualStyleBackColor = true;
             this.btnlistele.Click += new System.EventHandler(this.btnlistele_Click);
@@ -178,7 +178,7 @@
             this.btnsil.Location = new System.Drawing.Point(102, 202);
             this.btnsil.Name = "btnsil";
             this.btnsil.Size = new System.Drawing.Size(75, 23);
-            this.btnsil.TabIndex = 8;
+            this.btnsil.TabIndex = 26;
             this.btnsil.Text = "Sil";
             this.btnsil.UseVisualStyleBackColor = true;
             this.btnsil.Click += new System.EventHandler(this.btnsil_Click);
@@ -188,7 +188,7 @@
             this.btnekle.Location = new System.Drawing.Point(12, 202);
             this.btnekle.Name = "btnekle";
             this.btnekle.Size = new System.Drawing.Size(75, 23);
-            this.btnekle.TabIndex = 7;
+            this.btnekle.TabIndex = 25;
             this.btnekle.Text = "Ekle";
             this.btnekle.UseVisualStyleBackColor = true;
             this.btnekle.Click += new System.EventHandler(this.btnekle_Click);
@@ -201,7 +201,7 @@
             this.dgvurun.ReadOnly = true;
             this.dgvurun.RowTemplate.Height = 25;
             this.dgvurun.Size = new System.Drawing.Size(507, 184);
-            this.dgvurun.TabIndex = 6;
+            this.dgvurun.TabIndex = 24;
             // 
             // lburun
             // 
@@ -210,38 +210,41 @@
             this.lburun.Location = new System.Drawing.Point(12, 12);
             this.lburun.Name = "lburun";
             this.lburun.Size = new System.Drawing.Size(165, 184);
-            this.lburun.TabIndex = 5;
+            this.lburun.TabIndex = 23;
             this.lburun.SelectedIndexChanged += new System.EventHandler(this.lburun_SelectedIndexChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(702, 131);
+            this.label7.BackColor = System.Drawing.Color.Black;
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(738, 181);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(73, 15);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Uzun Kenar :";
+            this.label7.Size = new System.Drawing.Size(37, 15);
+            this.label7.TabIndex = 30;
+            this.label7.Text = "Alan :";
             // 
-            // tbuzunkenar
+            // tbalan
             // 
-            this.tbuzunkenar.Location = new System.Drawing.Point(781, 128);
-            this.tbuzunkenar.Name = "tbuzunkenar";
-            this.tbuzunkenar.Size = new System.Drawing.Size(100, 23);
-            this.tbuzunkenar.TabIndex = 19;
+            this.tbalan.Enabled = false;
+            this.tbalan.Location = new System.Drawing.Point(781, 177);
+            this.tbalan.Name = "tbalan";
+            this.tbalan.Size = new System.Drawing.Size(100, 23);
+            this.tbalan.TabIndex = 40;
             // 
-            // FrmDortgen
+            // FrmKup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(889, 270);
+            this.ClientSize = new System.Drawing.Size(896, 272);
             this.Controls.Add(this.tbfire);
+            this.Controls.Add(this.tbalan);
             this.Controls.Add(this.tbhacim);
-            this.Controls.Add(this.tbuzunkenar);
-            this.Controls.Add(this.tbkisakenar);
+            this.Controls.Add(this.tbkenar);
             this.Controls.Add(this.tbyukseklik);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tbad);
@@ -254,8 +257,8 @@
             this.Controls.Add(this.btnekle);
             this.Controls.Add(this.dgvurun);
             this.Controls.Add(this.lburun);
-            this.Name = "FrmDortgen";
-            this.Text = "FrmDortgen";
+            this.Name = "FrmKup";
+            this.Text = "FrmKup";
             ((System.ComponentModel.ISupportInitialize)(this.dgvurun)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -266,7 +269,7 @@
 
         private TextBox tbfire;
         private TextBox tbhacim;
-        private TextBox tbkisakenar;
+        private TextBox tbkenar;
         private TextBox tbyukseklik;
         private Label label6;
         private Label label5;
@@ -283,6 +286,6 @@
         private DataGridView dgvurun;
         private ListBox lburun;
         private Label label7;
-        private TextBox tbuzunkenar;
+        private TextBox tbalan;
     }
 }

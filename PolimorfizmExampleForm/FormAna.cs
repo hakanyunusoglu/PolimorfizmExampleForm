@@ -18,5 +18,11 @@ namespace PolimorfizmExampleForm
             FrmDortgen formdortgen = new FrmDortgen();
             formdortgen.Show();
         }
+
+        private void küpProfilToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmKup formkup = new FrmKup();
+            formkup.Show();
+        }
     }
 }
